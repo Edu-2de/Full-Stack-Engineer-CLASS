@@ -17,3 +17,5 @@ The content is organized by modules and topics for easy navigation. Each folder 
 ## Purpose
 
 This repository serves as a personal resource for tracking my progress throughout the course and showcasing my development journey.
+
+by 2DE
