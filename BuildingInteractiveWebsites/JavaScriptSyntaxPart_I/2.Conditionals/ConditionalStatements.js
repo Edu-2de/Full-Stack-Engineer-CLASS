@@ -79,3 +79,20 @@ console.log(`The ${writingUtensil} is mightier than the sword.`);
 
 
 
+//define a variavel como false
+let isLocked = false;
+//se a variavel isLocked for tue, entao ele imprimira 'You will need a key to open the door.', se nao for true, ou seja false, ele vai imprimir: 'You will not need a key to open the door.'
+isLocked? console.log('You will need a key to open the door.')
+: console.log('You will not need a key to open the door.');
+
+//define a variavel como true
+let isCorrect = true;
+//se a variavel isCorrect for true, entao ele vai imprimir 'Correct!', se nao for true ele imprime: 'Incorrect!'
+isCorrect? console.log('Correct!')
+: console.log('Incorrect!');
+
+//define a variavel como 'Love That!'
+let favoritePhrase1 = 'Love That!';
+//se a variavel favoritePhrase1 for igual a 'Love That!, entao ele vai imprimir I love that!', se nao for igual ele imprime: "I don't love that!"
+favoritePhrase1 === 'Love That!'? console.log('I love that!')
+: console.log("I don't love that!");
