@@ -4,6 +4,15 @@
 var favoriteFood = 'pizza';
 var numOfSlices = 8;
 
-//imprimi as variaveis
+//imprime as variaveis
 console.log(favoriteFood);
 console.log(numOfSlices);
+
+
+//define a variavel
+let changeMe = true;
+//muda a variavel
+changeMe = false;
+
+//imprime a variavel
+console.log(changeMe);
