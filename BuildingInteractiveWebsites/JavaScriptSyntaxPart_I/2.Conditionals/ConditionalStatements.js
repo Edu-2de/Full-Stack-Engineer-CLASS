@@ -96,3 +96,30 @@ let favoritePhrase1 = 'Love That!';
 //se a variavel favoritePhrase1 for igual a 'Love That!, entao ele vai imprimir I love that!', se nao for igual ele imprime: "I don't love that!"
 favoritePhrase1 === 'Love That!'? console.log('I love that!')
 : console.log("I don't love that!");
+
+
+
+//define a variavel mutavel como summer
+let season = 'summer';
+//se a variavel for igual a spring, mostra 'It\'s spring! The trees are budding!'
+if (season === 'spring') {
+  console.log('It\'s spring! The trees are budding!');
+
+//se a variavel for igual a winter, mostra 'It\'s winter! Everything is covered in snow.'
+} else if (season === 'winter'){
+  console.log('It\'s winter! Everything is covered in snow.')
+
+//se a variavel for igual a fall, mostra 'It\'s fall! Leaves are falling!'
+}else if (season === 'fall'){
+  console.log('It\'s fall! Leaves are falling!')
+
+//se a variavel for igual a summer, mostra 'It\'s sunny and warm because it\'s summer!'
+}else if (season === 'summer'){
+  console.log('It\'s sunny and warm because it\'s summer!')
+}
+
+//se nao for igual a nenhuma das de cima ele mostra 'Invalid season.'
+else {
+  console.log('Invalid season.');
+}
+
