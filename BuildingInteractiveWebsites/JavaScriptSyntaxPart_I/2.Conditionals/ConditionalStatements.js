@@ -123,3 +123,32 @@ else {
   console.log('Invalid season.');
 }
 
+
+
+//define a variavel mutavel como 'first place'
+let athleteFinalPosition = 'first place';
+
+//mostra o switch case, igual o if mas desse outro jeito:
+switch (athleteFinalPosition) {
+
+  // caso 1, se athleteFinalPosition for igual a 'first place', mostra: 'You get the gold medal!'
+  case 'first place':
+    console.log('You get the gold medal!');
+  break;
+
+  // caso 2, se athleteFinalPosition for igual a 'second place', mostra: 'You get the silver medal!'
+  case 'second place':
+    console.log('You get the silver medal!');
+  break;
+
+  // caso 3, se athleteFinalPosition for igual a 'third place', mostra: 'You get the bronze medal!'
+  case 'third place':
+    console.log('You get the bronze medal!');
+    break;
+
+  //se athleteFinalPosition nao for igual nenhuma das alternativcas acima, mostra: 'No medal awarded.'
+  default:
+    console.log('No medal awarded.');
+    break;
+ 
+}
