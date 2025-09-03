@@ -23,7 +23,8 @@ console.log('Codecademy'.toUpperCase());
 //remove espacos extras
 console.log('    Remove whitespace   '.trim());
 
-
+//retorna true se for inteiro ou false se nao for
+console.log(Number.isInteger(2017))
 
 /* Copilot said: JavaScript é uma linguagem de programação essencial
 JavaScript é uma linguagem de programação essencial para quem quer trabalhar com desenvolvimento web. Ela surgiu em 1995, criada por Brendan Eich em apenas 10 dias para o navegador Netscape, e rapidamente se tornou popular porque facilitou criar sites interativos.
