@@ -38,3 +38,42 @@ let propName =  'Active Mission';
 let isActive = spaceship1['Active Mission']
 //imprime true no console
 console.log(isActive)
+
+
+
+
+//aqui criamos a variavel spaceship1 que é um objeto, que tem como alguns componentes, onde cada um possui seu proprio valor
+let spaceship2 = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth',
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+
+//define que o color do nosso spaceship2 sera 'glorious gold'
+spaceship2.color = 'glorious gold';
+//define que o numEngines do nosso spaceship2 sera 10
+spaceship2.numEngines = 10;
+//tira a parametro 'Secret Mission' do nosso objeto e seu valor tambem
+delete spaceship2['Secret Mission'];
+
+
+
+
+//aqui criamos uma variavel que armazena uma frase
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+
+//criamos um objeto que tera duas funcoes dentro dele
+alienShip = {
+  //essa funcao imprime a frase que criamos acima
+  retreat() {
+    console.log(retreatMessage);
+  },
+  //essa imprime no console uma outra frase
+  takeOff() {
+    console.log('Spim... Borp... Glix... Blastoff!');
+  }
+}
+//chamamos as funcoes do nosso objeto para imripir no console as determinadas frases
+alienShip.retreat();
+alienShip.takeOff();
