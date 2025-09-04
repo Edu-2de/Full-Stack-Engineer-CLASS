@@ -1,4 +1,4 @@
-//// cSpell:disable
+// cSpell:disable
 
 //cria uma array em uma variavel chamada newYearsResolutions
 let newYearsResolutions = ['Keep a journal', 'Take a falconry class', 'Learn to juggle'];
