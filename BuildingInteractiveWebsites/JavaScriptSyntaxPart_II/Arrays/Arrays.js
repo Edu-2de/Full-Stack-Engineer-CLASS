@@ -27,3 +27,26 @@ console.log(famousSayings[3])
 let groceryList = ['bread', 'tomatoes', 'milk'];
 //define que o segundo item do array vai ser avocados
 groceryList[1] = 'avocados'
+
+
+
+//cria uma array em uma variavel chamada condiments
+let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+//cria uma array em uma variavel imutavel chamada utensils
+const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+//define que o primeiro item do array condiments vai ser Mayo
+condiments[0] = 'Mayo';
+
+//imprime o array condiments
+console.log(condiments);
+
+//define que o array condiments vai ser ter um item só, sendo ele 'Mayo'
+condiments = ['Mayo']
+//imrpime o array condiments, ou seja 'Mayo'
+console.log(condiments);
+
+//define que o 4 item do array utensils vai ser 'Spoon', e funciona pois so a variavel é imutavel, o array em si da para mexer a vontade
+utensils[3] = 'Spoon';
+//imprime o array utensils
+console.log(utensils);
+
