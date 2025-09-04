@@ -85,3 +85,20 @@ do {
   //imprime o valor de cupsOfSugarNeeded
   console.log(cupsAdded)
 }
+
+
+
+
+//cria um array com 5 itens
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+// cria um loop que comeca em 0 e vai ate 4, aumentando o contador em um cada vez, percorrendo a lista
+for (let i = 0; i < rapperArray.length; i++) {
+    //diz que se o item do array for igual a 'Notorious B.I.G.' ele ira imprimir 'Notorious B.I.G.'
+    if (rapperArray[i] === 'Notorious B.I.G.'){
+      console.log('Notorious B.I.G.')
+      break
+    }
+}
+//imrpime uma frase no console
+console.log("And if you don't know, now you know.")
