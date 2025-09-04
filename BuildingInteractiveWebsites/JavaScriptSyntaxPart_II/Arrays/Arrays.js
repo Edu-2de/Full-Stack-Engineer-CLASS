@@ -11,3 +11,19 @@ console.log(newYearsResolutions);
 const hobbies = ['oi ', ' tudo', 'bem ']
 //printa a variavel, ou seja prina o array
 console.log(hobbies)
+
+
+
+//cria uma array em uma variavel chamada famousSayings
+const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
+//cria uma variavel que armazena o primeiro item da array, ou seja 'Fortune favors the brave.'
+const listItem = famousSayings[0]
+//printa o 4 item do array, ou seja vai dar undefined, pois o array so tem 2 itens, pois comeca no 0 ate o 2
+console.log(famousSayings[3])
+
+
+
+//cria uma array em uma variavel chamada groceryList
+let groceryList = ['bread', 'tomatoes', 'milk'];
+//define que o segundo item do array vai ser avocados
+groceryList[1] = 'avocados'
