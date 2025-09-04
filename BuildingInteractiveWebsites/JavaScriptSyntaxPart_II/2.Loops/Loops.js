@@ -55,6 +55,19 @@ for (let i = 0; i < bobsFollowers.length; i++) {
     }
   }
 }
-
 //printa a lista com os itens que tem nos dois arrays
 console.log(mutualFollowers)
+
+
+
+
+//cria um array 
+const cards = ['diamond', 'spade', 'heart', 'club'];
+// cria uma variavel com uma string vazia
+let currentCard = '';
+//diz que enquanto o currentCard for diferente de spade ele ira transformar a variavel currentCard em um item aleatorio da array cards
+while (currentCard !== 'spade'){ 
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  //imprime a variavel que foi alterada
+  console.log(currentCard)
+}
