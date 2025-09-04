@@ -65,3 +65,37 @@ const chores = ['wash dishes', 'do laundry', 'take out trash'];
 chores.push('1', '2')
 //imprime o array
 console.log(chores)
+
+
+
+
+//cria uma array em uma variavel chamada chores1
+const chores1 = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+//tira o ultimo item do array
+chores1.pop();
+//imprime o array, mas agora sem o ultimo item dele
+console.log(chores1)
+
+
+
+// Cria um array com vários itens da lista de compras
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+
+// .unshift() adiciona um elemento no **início** do array, ou seja 'popcorn' no inicio do array
+groceryList.unshift('popcorn')
+
+// .slice(inicio, fim) retorna uma **cópia de parte do array**
+// Então vai retornar ['orange juice', 'bananas', 'coffee beans']
+console.log(groceryList.slice(1,4))
+
+// Mostra o array inteiro depois de adicionar 'popcorn' no início
+console.log(groceryList)
+
+// .indexOf('pasta') retorna o índice onde o item aparece no array, ou seja 5
+const pastaIndex = groceryList.indexOf('pasta')
+// Mostra o índice encontrado (5)
+console.log(pastaIndex)
+
+
+
+
