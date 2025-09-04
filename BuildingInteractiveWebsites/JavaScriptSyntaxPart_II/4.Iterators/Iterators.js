@@ -118,4 +118,29 @@ const interestingWords = words.filter((word) => {
 //verifica se todas as palavras tem mais de 5 caracteres, se tiver entao ele retorna true, se nao retrona false
 console.log(interestingWords.every((word) => {
   return word.length > 5;
- } ));
+}));
+
+
+
+
+//cria um array de cidades
+const cities = ['Orlando', 'Dubai', 'Edinburgh', 'Chennai', 'Accra', 'Denver', 'Eskisehir', 'Medellin', 'Yokohama'];
+//cria um array de numeros
+const nums = [1, 50, 75, 200, 350, 525, 1000];
+
+//para cada cidade imprime a frase Have you visited  mais o nome da cidade
+cities.forEach(city => console.log('Have you visited ' + city + '?'));
+//cria um novo array com as cidades que tem mais de 7 caracteres
+const longCities = cities.filter(city => city.length > 7);
+
+//comecando com a letra c, junta cada primeira letra do array, ou seja, C + O + D + E... e assim por diante
+const word = cities.reduce((acc, currVal) => {
+  return acc + currVal[0]
+}, "C");
+//imprime a plavra criada
+console.log(word)
+
+//faz um novo array com cada numero tirando 5 do valor
+const smallerNums = nums.map(num => num - 5);
+//se pelo menos um numero for menor que zero ele retorna true
+nums.some(num => num < 0);
