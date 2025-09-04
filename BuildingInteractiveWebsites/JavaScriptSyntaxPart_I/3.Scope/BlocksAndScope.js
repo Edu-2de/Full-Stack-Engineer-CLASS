@@ -23,3 +23,18 @@ function callMyNightSky(){
 }
 //chama a funcao direto no console, que ira imprimir a fras
 console.log(callMyNightSky())
+
+
+
+//cria uma funcao que cria uma variavel e a imprime
+function logVisibleLightWaves(){
+  const lightWaves = 'Moonlight';
+  console.log(lightWaves)
+}
+//chama a funcao
+logVisibleLightWaves()
+//da erro aqui, pois esta chamando a variavel que so esta criada dentro da funcao, entao o certo seria chamar a funcao em si
+console.log(lightWaves)
+
+
+
