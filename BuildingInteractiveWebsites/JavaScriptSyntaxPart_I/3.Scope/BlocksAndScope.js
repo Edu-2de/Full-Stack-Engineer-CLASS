@@ -54,16 +54,18 @@ console.log(stars1)
 
 
 
-
+//cria uma funcao de seta que cria duas variaveis mutaveis
 const logVisibleLightWaves = () => {
   let lightWaves = 'Moonlight';
 	let region = 'The Arctic';
-  // Add if statement here:
+  //adiciona um if para caso region for igual a 'The Arctic', trocar o valor de lightWaves para  'Northern Lights'
   if (region === 'The Arctic'){
     let lightWaves = 'Northern Lights';
+    //imprime o novo valor de lightwaves
     console.log(lightWaves)
   }
+  //imprime o valor antigo da variavel ou seja  'Moonlight', porque so alterou o valor dela dentro do if
   console.log(lightWaves);
 };
-
+//chama a funcao
 logVisibleLightWaves();
