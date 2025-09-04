@@ -1,10 +1,11 @@
 // cSpell:disable
 
-
+//cria um objeto menu
 let menu = {
   _meal: '',
   _price: 0,
-
+  
+  //cria um metodo setter para o price, para caso o parametro passado no setter for do tipo number, entao ele dfine o _price como aquele number, se nao for um numero entao ele imprime a frase "Por favor, insira um nome de refeição válido."
    set price(priceToCheck) {
     if(typeof priceToCheck === 'number'){
       this._price = priceToCheck
@@ -13,6 +14,7 @@ let menu = {
     }
   },
 
+  //cria um metodo setter para o meal, para caso o parametro passado no setter for do tipo string, entao ele dfine o _price como aquela string, se nao for uma string entao ele imprime a frase "Por favor, insira um nome de refeição válido."
   set meal(mealToCheck) {
     if(typeof mealToCheck === 'string'){
       this._meal = mealToCheck
