@@ -98,4 +98,23 @@ console.log(pastaIndex)
 
 
 
+// Cria um array com vários itens em uma variavel concept
+const concept = ['arrays', 'can', 'be', 'mutated'];
 
+//cria uma funcao que muda o array, passando um array como parametro, e ele altera o 4 item do array para 'MUTATED'
+function changeArr(arr){
+  arr[3] = 'MUTATED';
+}
+//chama a funcao colocando concept como parametro
+changeArr(concept);
+//printa o novo array, com 'MUTATED' nele
+console.log(concept)
+
+//cria uma funcao que remove o ultimo elemento do array
+function removeElement(newArr){
+  return newArr.pop()
+}
+//chama a funcao passando o array concept como parametro
+removeElement(concept);
+//printa concept array sem o ultimo elemento no final dele
+console.log(concept)
