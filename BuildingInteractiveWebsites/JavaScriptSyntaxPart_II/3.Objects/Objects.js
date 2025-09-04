@@ -42,7 +42,7 @@ console.log(isActive)
 
 
 
-//aqui criamos a variavel spaceship1 que é um objeto, que tem como alguns componentes, onde cada um possui seu proprio valor
+//aqui criamos a variavel spaceship2 que é um objeto, que tem como alguns componentes, onde cada um possui seu proprio valor
 let spaceship2 = {
   'Fuel Type' : 'Turbo Fuel',
   homePlanet : 'Earth',
@@ -77,3 +77,64 @@ alienShip = {
 //chamamos as funcoes do nosso objeto para imripir no console as determinadas frases
 alienShip.retreat();
 alienShip.takeOff();
+
+
+
+
+//aqui criamos a variavel spaceship3 que é um objeto, que tem como alguns componentes, onde cada um possui seu proprio valor
+let spaceship3 = {
+  passengers: [
+    {name: 'Space Dog'}
+    ],
+  telescope: {
+    yearBuilt: 2018,
+    model: "91031-XLT",
+    focalLength: 2032 
+  },
+  crew: {
+    captain: { 
+      name: 'Sandra', 
+      degree: 'Computer Engineering', 
+      encourageTeam() { console.log('We got this!') },
+     'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
+  },
+  engine: {
+    model: "Nimbus2000"
+  },
+  nanoelectronics: {
+    computer: {
+      terabytes: 100,
+      monitors: "HD"
+    },
+    'back-up': {
+      battery: "Lithium",
+      terabytes: 50
+    }
+  }
+}; 
+//cria uma variavel que armazena do nosso objeto spaceship3 o valor de 'cookies', que é o primeiro valor do nosso array 'favorite foods'
+let capFave = spaceship3.crew.captain['favorite foods'][0]
+//cria uma variavel que armazena name:'Space Dog", que é o primeiro item do nosso array passengers
+let firstPassenger = spaceship3.passengers[0]
+
+
+
+
+
+let spaceship4 = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+// Write your code below
+
+let greenEnergy = (spaceship4) => {
+  spaceship4['Fuel Type'] = 'avocado oil';  // Atribuição correta usando '='
+};
+
+let remotelyDisable = (spaceship4) => {
+  spaceship4.disabled = true;  // A propriedade 'disabled' é atribuída a true
+};
+
+remotelyDisable(spaceship4);
+greenEnergy(spaceship4);
+console.log(spaceship4)
