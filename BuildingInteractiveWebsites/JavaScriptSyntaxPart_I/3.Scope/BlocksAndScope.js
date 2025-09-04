@@ -1,0 +1,25 @@
+// cSpell:disable
+
+//define uma variavel imutavel chamada city com o valor 'New York City'
+const city = 'New York City'
+//funcao que cria uma variavel mutavel e retorna ela junto com a variavel imutavel que definimos acima
+function logCitySkyline(){
+  let skyscraper = 'Empire State Building';
+  return 'The stars over the ' + skyscraper + ' in ' + city;
+}
+//chama a funcao, que vai imprimir a frase completa
+console.log(logCitySkyline())
+
+
+
+//define 3 variaveis imutaveis
+const satellite = 'The Moon';
+const galaxy = 'The Milky Way';
+const stars = 'North Star';
+
+//cria uma funcao que retorna as 3 variaveis mais uma breve frase antes
+function callMyNightSky(){
+  return 'Night Sky: ' + satellite + ', ' + stars + ', and ' + galaxy;
+}
+//chama a funcao direto no console, que ira imprimir a fras
+console.log(callMyNightSky())
