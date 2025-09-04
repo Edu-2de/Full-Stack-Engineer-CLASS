@@ -102,3 +102,20 @@ const newSum = newNumbers.reduce((accumulator,currentValue) =>{
   console.log(newSum)
 }, 10);
 
+
+
+
+//cria um array de palavras
+const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+//chma a funcao some no console, que verifica se alguma das palavras de words tem menos de 6 caracteres, se pelo menos uma tiver ele retorna true, se nao false
+console.log(words.some((word) => {
+  return word.length < 6;
+}));
+//chma a funcao filter que cria um novo array com somente palavras com mais de 5 caracteres
+const interestingWords = words.filter((word) => {
+  return word.length > 5;
+})
+//verifica se todas as palavras tem mais de 5 caracteres, se tiver entao ele retorna true, se nao retrona false
+console.log(interestingWords.every((word) => {
+  return word.length > 5;
+ } ));
