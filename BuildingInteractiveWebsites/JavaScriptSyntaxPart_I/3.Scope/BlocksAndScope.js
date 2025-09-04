@@ -38,3 +38,32 @@ console.log(lightWaves)
 
 
 
+//define 3 variaveis imutaveis
+const satellite1 = 'The Moon';
+const galaxy1 = 'The Milky Way';
+const stars1 = 'North Star';
+//tenta mudar a variavel imutavel, oque dara erro, pois nao pode se mudar o valor da variavel
+const callMyNightSky = () => {
+  stars1 = 'Sirius';
+	return 'Night Sky: ' + satellite1 + ', ' + stars1 + ', ' + galaxy1;
+};
+//chma a funcao direto no console
+console.log(callMyNightSky());
+//imprime o valor da variavel stars1 dentro do console
+console.log(stars1)
+
+
+
+
+const logVisibleLightWaves = () => {
+  let lightWaves = 'Moonlight';
+	let region = 'The Arctic';
+  // Add if statement here:
+  if (region === 'The Arctic'){
+    let lightWaves = 'Northern Lights';
+    console.log(lightWaves)
+  }
+  console.log(lightWaves);
+};
+
+logVisibleLightWaves();
