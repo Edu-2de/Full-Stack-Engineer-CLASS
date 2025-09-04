@@ -52,8 +52,16 @@ console.log(utensils);
 
 
 
-
 //cria uma array em uma variavel chamada objectives
 const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
 //imrpime a quantidade de itens que tem o array, ou seja 3
-console.log(objectives.length)
+console.log(objectives.length);
+
+
+
+//cria uma array em uma variavel chamada chores
+const chores = ['wash dishes', 'do laundry', 'take out trash'];
+//define que o array, alem dos itens que ja tem, vai adicionar os itens '1' e '2'
+chores.push('1', '2')
+//imprime o array
+console.log(chores)
