@@ -68,3 +68,20 @@ const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'
 const longFavoriteWords = favoriteWords.filter(word => {
   return word.length > 7;
 })
+
+
+
+
+//cria um array de strings, com animais
+const animals1 = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+//cria uma funcao que acha e retorna o index de elephant na lista
+const foundAnimal = animals1.findIndex(animal =>{
+  return animal == 'elephant';
+})
+//cria uma funcao que acha e retorna o index da primeira palavra que comeca com s no array 
+const startsWithS = animals1.findIndex(animal =>{
+  return animal[0] == 's';
+})
+//chama as variaveis que armazenam as funcoess
+console.log(startsWithS)
+console.log(foundAnimal)
