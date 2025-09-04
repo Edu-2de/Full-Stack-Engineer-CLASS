@@ -71,3 +71,17 @@ while (currentCard !== 'spade'){
   //imprime a variavel que foi alterada
   console.log(currentCard)
 }
+
+
+
+
+//cria duas variaveis com dois valores diferentes
+let cupsOfSugarNeeded = 10;
+let cupsAdded = 0;
+//diiz para aumentar em 1 o cupsAdded, enquanto cupsAdded for menor que cupsOfSugarNeeded
+do {
+  cupsAdded +=1
+}while(cupsAdded < cupsOfSugarNeeded){
+  //imprime o valor de cupsOfSugarNeeded
+  console.log(cupsAdded)
+}
