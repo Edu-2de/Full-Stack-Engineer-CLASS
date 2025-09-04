@@ -138,3 +138,39 @@ remotelyDisable(spaceship4);
 greenEnergy(spaceship4);
 //imprime o objeto alterado
 console.log(spaceship4)
+
+
+
+
+let spaceship5 = {
+    crew: {
+    captain: { 
+        name: 'Lily', 
+        degree: 'Computer Engineering', 
+        cheerTeam() { console.log('You got this!') } 
+        },
+    'chief officer': { 
+        name: 'Dan', 
+        degree: 'Aerospace Engineering', 
+        agree() { console.log('I agree, captain!') } 
+        },
+    medic: { 
+        name: 'Clementine', 
+        degree: 'Physics', 
+        announce() { console.log(`Jets on!`) } },
+    translator: {
+        name: 'Shauna', 
+        degree: 'Conservation Science', 
+        powerFuel() { console.log('The tank is full!') } 
+        }
+    }
+}; 
+
+//criamos um loop que ira passar por cada um dos nossos membros do crew, ou seja capitain, medic e translator e imprimira o nome deles e sua funcao
+for(let crewMember in spaceship5.crew){
+  console.log(`${crewMember}: ${spaceship5.crew[crewMember].name}`);
+}
+//criamos um loop que ira passar por cada um dos nossos membros do crew, ou seja capitain, medic e translator e imprimira o nome deles e sua degree
+for(let crewMember in spaceship5.crew){
+  console.log(`${spaceship5.crew[crewMember].name}: ${spaceship5.crew[crewMember].degree}`);
+}
