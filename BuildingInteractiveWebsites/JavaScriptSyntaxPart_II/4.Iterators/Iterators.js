@@ -51,3 +51,20 @@ const smallNumbers = bigNumbers.map(item => item/100)
 //imrpime o array de numeros pequenos e a mesnagem screta
 console.log(smallNumbers)
 console.log(secretMessage)
+
+
+
+
+//cria uma array de numeros
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+//cria uma funcao com filter que retrona so numeros menores que 250
+const smallNumbers1 = randomNumbers.filter(number => {
+  return number < 250;
+})
+
+//cria um array de strings
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+//cria uma funcao com filter que so retrona strings com mais de 7 caracteres
+const longFavoriteWords = favoriteWords.filter(word => {
+  return word.length > 7;
+})
