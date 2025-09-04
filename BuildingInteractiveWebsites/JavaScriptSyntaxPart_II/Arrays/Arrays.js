@@ -7,10 +7,12 @@ console.log(newYearsResolutions);
 
 
 
+
 //cria uma array em uma variavel chamada hobbies
 const hobbies = ['oi ', ' tudo', 'bem '];
 //printa a variavel, ou seja prina o array
 console.log(hobbies);
+
 
 
 
@@ -23,10 +25,12 @@ console.log(famousSayings[3]);
 
 
 
+
 //cria uma array em uma variavel chamada groceryList
 let groceryList = ['bread', 'tomatoes', 'milk'];
 //define que o segundo item do array vai ser avocados
 groceryList[1] = 'avocados';
+
 
 
 
@@ -52,10 +56,12 @@ console.log(utensils);
 
 
 
+
 //cria uma array em uma variavel chamada objectives
 const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
 //imrpime a quantidade de itens que tem o array, ou seja 3
 console.log(objectives.length);
+
 
 
 
@@ -69,12 +75,14 @@ console.log(chores)
 
 
 
+
 //cria uma array em uma variavel chamada chores1
 const chores1 = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
 //tira o ultimo item do array
 chores1.pop();
 //imprime o array, mas agora sem o ultimo item dele
 console.log(chores1)
+
 
 
 
@@ -98,6 +106,7 @@ console.log(pastaIndex)
 
 
 
+
 // Cria um array com vários itens em uma variavel concept
 const concept = ['arrays', 'can', 'be', 'mutated'];
 
@@ -118,3 +127,11 @@ function removeElement(newArr){
 removeElement(concept);
 //printa concept array sem o ultimo elemento no final dele
 console.log(concept)
+
+
+
+
+//cria um array com outros arrays dentro, ou seja um array que tem 3 arrays dentro
+const numberClusters =  [[1,2], [3,4], [5,6]]
+//aqui vai aparecer 6, pois seria o 2 array de 0 a 2, e dentro dele o elemento 1, de 0 a 1
+const target = numberClusters[2][1];
