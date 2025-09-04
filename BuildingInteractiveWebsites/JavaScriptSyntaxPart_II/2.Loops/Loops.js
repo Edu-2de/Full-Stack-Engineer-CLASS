@@ -9,11 +9,13 @@ console.log(vacationSpots[2])
 
 
 
+
 //cria um loop que comeca em 5 e caba no 11, diz que toda vez que vai passar pelo loop, ele aumenta em um o contador
 for(let counter = 5; counter <= 11; counter++){
   //imprime o contador toda vez, o que fara ele printar de 5 ate 11
   console.log(counter);
 }
+
 
 
 
@@ -24,6 +26,8 @@ for (let counter = 3; counter >= 0; counter--) {
 }
 
 
+
+
 //cria um array com 3 itens chamado vacationSpots1
 const vacationSpots1 = ['Bali', 'Paris', 'Tulum'];
 
@@ -32,3 +36,25 @@ for (let i = 0; i < vacationSpots1.length; i++){
   //imprime a mensagem 3 vezes, pegando o indice correspondente ao contador no array
   console.log('I would love to visit ' + vacationSpots1[i]);
 }
+
+
+
+
+//cria 3 arrays, sendo que um deles esta vazio
+let bobsFollowers = ['Rob', 'Bob', 'Lob', 'Tob'];
+let tinasFollowers = ['Rob', 'Bob', 'Gina',];
+let mutualFollowers = [];
+
+//cria um loop que comeca em 0 e vai ate ser menor que o array bobsFollowers, ou seja vai de 0 a 3, aumentando o contador em 1 cada vez
+for (let i = 0; i < bobsFollowers.length; i++) {
+  //cria um loop dentro do loop que comeca em 0 e vai ate ser menor que o array tinasFollowers, ou seja de 0 a 2, aumentando o contador em 1 cada vez
+  for (let j = 0; j < tinasFollowers.length; j++) {
+    //cria um if para que caso o indice, ou seja o item do array for igual nos dois arrays, entao ele vai colocar um item desses no array mutualFollowers
+    if (bobsFollowers[i] === tinasFollowers[j]) {
+      mutualFollowers.push(bobsFollowers[i])
+    }
+  }
+}
+
+//printa a lista com os itens que tem nos dois arrays
+console.log(mutualFollowers)
