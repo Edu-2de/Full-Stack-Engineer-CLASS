@@ -23,7 +23,7 @@ let menu = {
     }
   },
 
-
+  //cria um metodo getter, que caso tanto o _meal quanto o _price estiverem com valores definidos entao ele imprime `O Especial de Hoje é ${this._meal} por US ${this._price} dols.`, se algum dos dois estiver faltando ele imprime 'Meal or price was not set correctly!'
   get todaysSpecial(){
     if (this._meal && this._price){
       console.log(`O Especial de Hoje é ${this._meal} por US ${this._price} dols.`)
@@ -32,11 +32,11 @@ let menu = {
     }
 
   }
-
-
 }
+
+//define que o meal tem valor de pizza e que o preco tem valor de 10
 menu.meal = "Pizza";
 menu.price = 10;
-
+//chama o getter no console
 console.log(menu.todaysSpecial)
 
