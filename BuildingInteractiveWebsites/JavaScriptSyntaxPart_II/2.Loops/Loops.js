@@ -24,4 +24,11 @@ for (let counter = 3; counter >= 0; counter--) {
 }
 
 
+//cria um array com 3 itens chamado vacationSpots1
+const vacationSpots1 = ['Bali', 'Paris', 'Tulum'];
 
+//cria um loop que comeca em 0 e vai ate ser menot que o tamanho do array vacationSpots1, ou seja vai de 0 a 3 (pois o array tem 3 itens, entao ele ira de 0 a 2, oque aparecera 3 mensagens na tela), aumentando cada vez o contador
+for (let i = 0; i < vacationSpots1.length; i++){
+  //imprime a mensagem 3 vezes, pegando o indice correspondente ao contador no array
+  console.log('I would love to visit ' + vacationSpots1[i]);
+}
