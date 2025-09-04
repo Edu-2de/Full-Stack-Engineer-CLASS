@@ -120,21 +120,21 @@ let firstPassenger = spaceship3.passengers[0]
 
 
 
-
+//aqui criamos a variavel spaceship4 que é um objeto, que tem como alguns componentes, onde cada um possui seu proprio valor
 let spaceship4 = {
   'Fuel Type' : 'Turbo Fuel',
   homePlanet : 'Earth'
 };
-// Write your code below
-
+//criamos uma funcao que aceita nosso objeto como parametro, e altera o 'Fuel Type' de 'Turbo Fuel' para 'avocado oil'
 let greenEnergy = (spaceship4) => {
-  spaceship4['Fuel Type'] = 'avocado oil';  // Atribuição correta usando '='
+  spaceship4['Fuel Type'] = 'avocado oil'; 
 };
-
+//criamos uma funcao que aceita nosso objeto como parametro, e adiciona a propriedade disabled no nosso objeto, botando um valor true nele
 let remotelyDisable = (spaceship4) => {
-  spaceship4.disabled = true;  // A propriedade 'disabled' é atribuída a true
+  spaceship4.disabled = true;  
 };
-
+//chama as funcoes que acabamos de criar
 remotelyDisable(spaceship4);
 greenEnergy(spaceship4);
+//imprime o objeto alterado
 console.log(spaceship4)
