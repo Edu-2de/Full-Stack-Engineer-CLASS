@@ -85,3 +85,20 @@ const startsWithS = animals1.findIndex(animal =>{
 //chama as variaveis que armazenam as funcoess
 console.log(startsWithS)
 console.log(foundAnimal)
+
+
+
+
+//cria um array de numeros
+const newNumbers = [1, 3, 5, 7];
+//cria uma funcao com reduce, que aceita dois parametros, 
+//accumalator que definimos ali embaixo que comeca em 10
+//e o currentValue que seria o valor em si na lista, como 1, 3, 5
+//entao a cada vez que ele faz o loop ele soma o acumulator com o current value, ou seja, 10 + 1, 11 + 3, 14 + 5.....
+const newSum = newNumbers.reduce((accumulator,currentValue) =>{
+  console.log('The value of accumulator: ', accumulator);
+  console.log('The value of currentValue: ', currentValue);
+  return accumulator + currentValue;
+  console.log(newSum)
+}, 10);
+
