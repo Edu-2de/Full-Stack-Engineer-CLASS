@@ -49,3 +49,32 @@ class Surgeon1 {
 //cria objetos da classe Surgeon1 chamados surgeonRomero e surgeonJackson
 const surgeonRomero = new Surgeon1('Francisco Romero', 'Cardiovascular')
 const surgeonJackson = new Surgeon1('Ruth Jackson', 'Orthopedics')
+
+
+
+
+// cria a classe Surgeon que precisa de name e department para instanciar um objeto
+// nao precisa colocar o terceiro elemento quando for instaciar pois ja tem um valor default para ele, no caso 20
+class Surgeon2 {
+  constructor(name, department, remainingVacationDays) {
+    this._name = name;
+    this._department = department;
+    this._remainingVacationDays = 20;
+  }
+    //metodo get que retorna o nome do objeto
+    get name(){
+      return this._name;
+    }
+    //metodo get que retorna o departamento do objeto
+    get department() {
+    return this._department;
+    }
+    //metodo get que retorna o remainingVacationDays do objeto
+    get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+}
+//cria objetos da classe Surgeon1 chamados surgeonRomero e surgeonJackson
+const surgeonRomero2 = new Surgeon2('Francisco Romero', 'Cardiovascular');
+const surgeonJackson2 = new Surgeon2('Ruth Jackson', 'Orthopedics');
+
