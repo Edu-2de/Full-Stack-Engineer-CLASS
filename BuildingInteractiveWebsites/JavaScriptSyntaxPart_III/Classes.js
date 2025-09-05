@@ -1,6 +1,6 @@
 // cSpell:disable
 
-// cria a classe Dog que tem um constructor para instanciar um objeto com name e behavior
+// cria a classe Dog que tem um constructor para instanciar um objeto com name e behavior, so precisa passar o name
 class Dog {
   constructor(name) {
     this._name = name;
@@ -36,3 +36,16 @@ class Surgeon{
     this.department = department;
   }
 }
+
+
+
+// cria a classe Surgeon que precisa de name e department para instanciar um objeto
+class Surgeon1 {
+  constructor(name, department) {
+    this.name = name;
+    this.department = department;
+  }
+}
+//cria objetos da classe Surgeon1 chamados surgeonRomero e surgeonJackson
+const surgeonRomero = new Surgeon1('Francisco Romero', 'Cardiovascular')
+const surgeonJackson = new Surgeon1('Ruth Jackson', 'Orthopedics')
