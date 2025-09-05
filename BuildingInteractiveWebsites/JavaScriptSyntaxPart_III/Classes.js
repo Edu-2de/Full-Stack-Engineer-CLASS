@@ -113,3 +113,26 @@ const surgeonJackson3 = new Surgeon3('Ruth Jackson', 'Orthopedics');
 surgeonRomero3.takeVacationDays(3);
 //imprime _remainingVacationDays daquele objeto
 console.log(surgeonRomero3.remainingVacationDays())
+
+
+
+
+// cria a classe HospitalEmployee que precisa de name para instanciar um objeto
+class HospitalEmployee{
+  constructor(name){
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+  //metodo get que retorna o nome do objeto
+  get name(){
+    return this._name
+  }
+  //metodo get que retorna o remainingVacationDays do objeto
+  get remainingVacationDays(){
+    return this._remainingVacationDays
+  }
+  //funcao que voce precisa passar uma variavel daysOff na chamada dela, ela pega o valor que temos no nosso objeto em _remainingVacationDays e diminui do valor que voce passar em daysOff
+  takeVacationDays(daysOff){
+    this._remainingVacationDays = this._remainingVacationDays - daysOff 
+  }
+}
