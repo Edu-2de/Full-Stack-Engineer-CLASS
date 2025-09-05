@@ -169,3 +169,38 @@ class Nurse extends HospitalEmployee1{
 }
 //cria um objeto em nurse, passando tanto o name, quanto o array de certifications
 const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics'])
+
+
+
+
+// cria a classe HospitalEmployee que precisa de name para instanciar um objeto
+class HospitalEmployee2 {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+  //metodo get que retorna o nome do objeto
+  get name() {
+    return this._name;
+  }
+  //metodo get que retorna o remainingVacationDays do objeto
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+  //funcao que voce precisa passar uma variavel daysOff na chamada dela, ela pega o valor que temos no nosso objeto em _remainingVacationDays e diminui do valor que voce passar em daysOff
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+//aqui ele cria uma nova classe Nurse2 que herda as caracteristicas de HospitalEmployee2, ou seja vai herdar o name e o remainingVacationDays no construtor, so que vai ter um campo a mais, _certifications
+class Nurse2 extends HospitalEmployee2 {
+ constructor(name, certifications) {
+   super(name);
+   this._certifications = certifications;
+ } 
+}
+//cria um objeto em nurse, passando tanto o name, quanto o array de certifications
+const nurseOlynyk2 = new Nurse2('Olynyk', ['Trauma','Pediatrics']);
+//Aqui vai dar um undefined, pois nao definimos que a nurse ira herdar as funcoes de hospital tambem, ou seja essas funcoes nao vao estar definidas
+nurseOlynyk.takeVacationDays(5);
+nurseOlynyk.nurseOlynyk
