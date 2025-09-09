@@ -10,3 +10,20 @@ describe('Math', () =>{
     })
   })
 })
+
+
+
+
+// importa o assert
+const assert = require('assert')
+//cria um grupo de testes chamdo +
+describe('+', () => {
+  //cria um teste dentro do grupo que deve retornar a soma dos argumentos
+  it('returns the sum of its arguments', () => {
+    // assert.ok() verifica se a expressão é verdadeira
+    // se 3 + 4 === 7 -> passa
+    // se não, o teste falha
+    assert.ok(3 + 4 === 7);
+
+  });
+});
