@@ -56,45 +56,39 @@ describe(arr.pop(), () => {
 
 
 
-
+// importa o assert para verificar as condições do teste
 const assert = require('assert');
+// importa o módulo fs (File System) para manipulação de arquivos
 const fs = require('fs');
 let path, str;
- 
+
+// cria um grupo de testes para o método appendFileSync
 describe('appendFileSync', () => {
-  it('creates a new file with a string of text', () => {
- 
-   // Setup
-   path = './message.txt';
-   str = 'Hello Node.js';
-  
-   // Exercise: write to file
-   fs.appendFileSync(path, str);
- 
-   // Verify: compare file contents to string
-   const contents = fs.readFileSync(path);
-   assert.equal(contents.toString(), str);
- 
-   // Teardown: restore file
-   fs.unlinkSync(path);
+  // primeiro teste
+  it('cria um novo arquivo com uma string de texto', () => {
+    // --- Setup: prepara variáveis ---
+    path = './message.txt';   // caminho do arquivo
+    str = 'Hello Node.js';    // conteúdo que será escrito
+    // --- Exercício: escreve no arquivo ---
+    fs.appendFileSync(path, str);
+    // --- Verificação: lê o conteúdo e compara com a string ---
+    const contents = fs.readFileSync(path);
+    assert.equal(contents.toString(), str);
+    // --- Teardown: remove o arquivo para não deixar lixo ---
+    fs.unlinkSync(path);
+  });
 
- });
- 
- it('creates a new file with a string of text', () => {
- 
-   // Setup
-   path = './message.txt';
-   str = '';
-  
-   // Exercise: write to file
-   fs.appendFileSync(path, str);
- 
-   // Verify: compare file contents to string
-   const contents = fs.readFileSync(path);
-   assert.equal(contents.toString(), str);
- 
-   // Teardown: restore file
-   fs.unlinkSync(path);
-
- });
+  // segundo teste
+  it('cria um novo arquivo com uma string vazia', () => {
+    // --- Setup ---
+    path = './message.txt';
+    str = '';   // string vazia
+    // --- Exercício ---
+    fs.appendFileSync(path, str);
+    // --- Verificação ---
+    const contents = fs.readFileSync(path);
+    assert.equal(contents.toString(), str);
+    // --- Teardown ---
+    fs.unlinkSync(path);
+  });
 });
