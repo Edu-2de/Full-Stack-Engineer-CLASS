@@ -22,3 +22,6 @@ console.log('Will logging the error stop our program from running?');
 
 
 
+//vai dar um erro mesmo no console, mas porque estamos usando errado a propriedade de mostrar um erro na tela...
+throw Error('Username or password does not match');
+
