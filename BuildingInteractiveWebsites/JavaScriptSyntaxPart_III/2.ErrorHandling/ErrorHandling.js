@@ -40,3 +40,20 @@ try {
 
 
 
+
+//funcao que recebe um array como parametro e depois percorre ele e modifica os elemntos dele para letras maiusculas somente, se nao consguir imprime no console o erro correspondente
+function capAllElements(arr){
+  try {
+    arr.forEach((el, index, array) => {
+      array[index] = el.toUpperCase();
+    }); 
+  } catch (e) {
+    console.log(e);
+  }
+}
+//aqui vai dar erro pois nao estamos passando um array e sim uma string, entao vai dar erro e imprimir no console
+capAllElements('Incorrect argument');
+
+
+
+
