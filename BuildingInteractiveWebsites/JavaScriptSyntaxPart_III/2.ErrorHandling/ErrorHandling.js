@@ -14,3 +14,11 @@ console.log('Because of the error, this will not be printed!');
 
 
 
+//Vai imprimir no console, como se fosse um erro, que o usario nao tem nome, esta faltando o nome do usuario
+console.log(new Error('User missing name'));
+//ira imprimir essa frese abaixo no console, pois nao sera um erro inesperado, um erro que estamos imprimindo mesmo, entao noa ira fazer o codigo parar no meio
+console.log('Will logging the error stop our program from running?');
+
+
+
+
