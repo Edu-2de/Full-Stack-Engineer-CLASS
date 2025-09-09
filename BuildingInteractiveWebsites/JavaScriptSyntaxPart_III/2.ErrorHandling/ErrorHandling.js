@@ -22,6 +22,21 @@ console.log('Will logging the error stop our program from running?');
 
 
 
-//vai dar um erro mesmo no console, mas porque estamos usando errado a propriedade de mostrar um erro na tela...
+//Aqui você lança o erro diretamente, sem nenhum try/catch ao redor.
+//Quando o JavaScript encontra esse throw, ele interrompe imediatamente a execução e "sobe" o erro.
+//Se não existir um try/catch em volta, o erro não será tratado.
+//Resultado: o programa para de executar e o console mostra uma mensagem de erro não tratado.
 throw Error('Username or password does not match');
+
+
+
+
+//agora nao vai dar um erro no terminal, pois estamos fazendo certo, usando o throw para lancar o erro, em seguida o catch pega o erro e o imprime no console, nao estamos apenas lancando o erro....
+try {
+  throw Error('This error will get caught');
+} catch (e) {
+ console.log(e);
+}
+
+
 
